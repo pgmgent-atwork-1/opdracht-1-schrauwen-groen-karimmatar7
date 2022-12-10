@@ -1,24 +1,32 @@
 (() => {
-    const $prive = document.getElementById("private");
-    const $business = document.getElementById("business");
-    const $public = document.getElementById("public");
+    const $references = document.getElementById("references");
+    const types = ["private", "b2b", "public"];
+    const html = types.map((type) => {
+        return `
+        <div class="${type}" id="${type}">
+            <h2>${getTitleforType(type)}</h2>
+            <ul>
+            ${REFERENCES.filter((reference) => reference.type === type).map((reference) => {
+            return `
+                <li>
+                    <img src="${reference.image}" alt="">
+                    <p>${reference.description}</p>
+                </li>`
+        }).join("")
+            }
+            </ul>
+        </div>
+        `})
+        .join("");
+    $references.innerHTML = html;
 
-    const htmlprivate = REFERENCES.filter((reference) => reference.type === "private").map((reference) => {
-        return `<li><img src="${reference.image}" alt=""><p>${reference.description}</p></li>`
-    }).join("");
-
-    $prive.innerHTML = htmlprivate;
-
-    const htmlb2b = REFERENCES.filter((ref) => ref.type === "b2b").map((ref) => {
-        return `<li><img src="${ref.image}" alt=""><p>${ref.description}</p></li>`
-    }).join("");
-
-    $business.innerHTML = htmlb2b;
-
-    const htmlpublic = REFERENCES.filter((refere) => refere.type === "public").map((refere) => {
-        return `<li><img src="${refere.image}" alt=""><p>${refere.description}</p></li>`
-    }).join("");
-
-    $public.innerHTML = htmlpublic;
-
+    function getTitleforType(type) {
+        if (type === "private") {
+            return "Privé-omgeving";
+        } else if (type === "b2b") {
+            return "Zakelijke omgeving"
+        } else if (type === "public") {
+            return "Openbaar domein"
+        }
+    }
 })()

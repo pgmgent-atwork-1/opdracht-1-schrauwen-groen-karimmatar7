@@ -19,15 +19,15 @@
                 <li><img src="static/img/usp-check.svg"> Flexibele aanpak</li>
                 <li><img src="static/img/usp-check.svg"> Transparante communicatie</li>
                 <li><img src="static/img/usp-check.svg"> Uitgebreid machinepark</li>
+                <nav class="sec-contact">
+                    <img class="email" src="static/img/mail-green.svg" alt="">
+                    <a href="mailto:info@schrauwen.be">info@schrauwen.be</a>
+                    <img class="phone" src="static/img/phone-green.svg" alt="">
+                    <a href="tel:050281776">050 28 17 76</a>
+                </nav>
+            </ul>
         </div>
         <div>
-            <nav class="sec-contact">
-                <img class="email" src="static/img/mail-green.svg" alt="">
-                <a href="mailto:info@schrauwen.be">info@schrauwen.be</a>
-                <img class="phone" src="static/img/phone-green.svg" alt="">
-                <a href="tel:050281776">050 28 17 76</a>
-            </nav>
-            </ul>
             <a class="logo" href="index.html"><img src="static/img/schrauwen-logo.svg" alt="logo"></a>
             <ul class="navigation">
                 <li><a href="aanleg.html">Aanleg</a></li>
@@ -60,7 +60,7 @@
             </div>
         </section>
         <div class="parent">
-            <ul id="aptitude" class="aptitude"></ul>
+            <ul id="services" class="aptitude" data-type="aptitude-one"></ul>
         </div>
         <div class="wrapper">
             <div class="dark-green">
@@ -83,7 +83,7 @@
         </div>
         <section class="wrapper-reference">
             <h2 class="title-aptitude-pg">Onze referenties</h2>
-            <ul class="reference-aptitude" id="reference-aptitude"></ul>
+            <ul class="reference-aptitude" id="reference"></ul>
         </section>
         <div class="method-wrapper">
             <div class="method-section">
@@ -117,55 +117,73 @@
                         <div class="column-phone">
                             <p class="text-phone">Geef ons een seintje</p>
                             <a class="phone-link" href="tel:050281776">050 28 17 76</a>
-                            <img class="information-image" src="static/img/information.svg" alt="">
                         </div>
-                        <div class="column-mail">
-                            <p class="text-mail">Stuur ons een mailtje</p>
-                            <a class="mail-link" href="mailto:info@schrauwen.be">info@schrauwen.be</a>
+                        <div class="holder-email">
+                            <div class="column-mail">
+                                <p class="text-mail">Stuur ons een mailtje</p>
+                                <a class="mail-link" href="mailto:info@schrauwen.be">info@schrauwen.be</a>
+                            </div>
+                            <div class="holder-footer">
+                                <img class="information-image" src="static/img/information.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <img class="logo-footer" src="static/img/logo-footer.svg">
-                <div class="column-one">
-                    <h4 class="about-object">Over Schrauwen Groen</h4>
-                    <ul class="list-column-one">
-                        <li><img src="static/img/arrow-orange.svg" alt=""><a
-                                href="https://www.pgm.gent/atwork1-schrauwen-groen/werkwijze.html">werkwijze</a></li>
-                        <li><img src="static/img/arrow-orange.svg" alt=""><a
-                                href="https://www.pgm.gent/atwork1-schrauwen-groen/onze-historiek.html">Historiek</a>
-                        </li>
-                        <li><img src="static/img/arrow-orange.svg" alt=""><a
-                                href="https://www.pgm.gent/atwork1-schrauwen-groen/ons-verhaal.html">Team</a></li>
-                        <li><img src="static/img/arrow-orange.svg" alt=""><a
-                                href="https://www.pgm.gent/atwork1-schrauwen-groen/werken-bij-schrauwen-groen.html">Jobs</a>
-                        </li>
-                    </ul>
-                    <div class="box-second">
-                        <h4 class="useful">Handige links</h4>
-                        <ul class="list-column-two">
-                            <li><img src="static/img/arrow-orange.svg" alt=""><a href="aanleg.html">Aanleg</a></li>
-                            <li><img src="static/img/arrow-orange.svg" alt=""><a href="onderhoud.html">Onderhoud</a>
-                            </li>
-                            <li><img src="static/img/arrow-orange.svg" alt=""><a href="contact.html">Contact</a></li>
-                            <li><img src="static/img/arrow-orange.svg" alt=""><a
-                                    href="https://www.pgm.gent/atwork1-schrauwen-groen/nieuws.html">Nieuws</a></li>
-                        </ul>
+                <div class="holder-everything">
+                    <div class="holder-logobelow">
+                        <img class="logo-footer" src="static/img/logo-footer.svg">
                     </div>
-                    <div class="contact-info">
-                        <h4 class="heading">Contactgegevens</h4>
-                        <ul class="list-informa">
-                            <li class="address"><a href="#">St-Elooisstraat 80, 8020 Ruddervoorde</a></li>
-                            <li><a href="mailto:info@schrauwen.be"><img src="static/img/orange mail.svg" alt="">
-                                    info@schrauwen.be</a></li>
-                            <li><a href="tel:050281776"><img src="static/img/orange phone.svg" alt=""> 050 28 17 76</a>
-                            </li>
-                            <li class="btw">BTW BE 0632 500 871</li>
-                        </ul>
-                    </div>
-                    <div class="last-element">
-                        Oorspronkelijk design van <a href="https://www.de-formatie.be/">De Formatie.</a> Met trots
-                        nagemaakt door Karim Matar voor het vak @work1
-                        in opdracht van Arteveldehogeschool.
+                    <div class="bre-bre">
+                        <div class="column-one">
+                            <h4 class="about-object">Over Schrauwen Groen</h4>
+                            <ul class="list-column-one">
+                                <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                        href="https://www.pgm.gent/atwork1-schrauwen-groen/werkwijze.html">werkwijze</a>
+                                </li>
+                                <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                        href="https://www.pgm.gent/atwork1-schrauwen-groen/onze-historiek.html">Historiek</a>
+                                </li>
+                                <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                        href="https://www.pgm.gent/atwork1-schrauwen-groen/ons-verhaal.html">Team</a>
+                                </li>
+                                <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                        href="https://www.pgm.gent/atwork1-schrauwen-groen/werken-bij-schrauwen-groen.html">Jobs</a>
+                                </li>
+                            </ul>
+                            <div class="box-second">
+                                <h4 class="useful">Handige links</h4>
+                                <ul class="list-column-two">
+                                    <li><img src="static/img/arrow-orange.svg" alt=""><a href="aanleg.html">Aanleg</a>
+                                    </li>
+                                    <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                            href="onderhoud.html">Onderhoud</a>
+                                    </li>
+                                    <li><img src="static/img/arrow-orange.svg" alt=""><a href="contact.html">Contact</a>
+                                    </li>
+                                    <li><img src="static/img/arrow-orange.svg" alt=""><a
+                                            href="https://www.pgm.gent/atwork1-schrauwen-groen/nieuws.html">Nieuws</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="contact-info">
+                                <h4 class="heading">Contactgegevens</h4>
+                                <ul class="list-informa">
+                                    <li class="address"><a href="#">St-Elooisstraat 80, 8020 Ruddervoorde</a></li>
+                                    <li><a href="mailto:info@schrauwen.be"><img src="static/img/orange mail.svg" alt="">
+                                            info@schrauwen.be</a></li>
+                                    <li><a href="tel:050281776"><img src="static/img/orange phone.svg" alt=""> 050 28 17
+                                            76</a>
+                                    </li>
+                                    <li class="btw">BTW BE 0632 500 871</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="last-element">
+                            Oorspronkelijk design van <a href="https://www.de-formatie.be/">De Formatie.</a> Met
+                            trots
+                            nagemaakt door Karim Matar voor het vak @work1
+                            in opdracht van Arteveldehogeschool.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,7 +192,7 @@
     </footer>
     <script src="data/references.js"></script>
     <script src="data/services.js"></script>
-    <script src="static/js/aanleg.js"></script>
+    <script src="static/js/services.js"></script>
 </body>
 
 </html>
